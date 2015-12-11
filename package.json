@@ -1,0 +1,19 @@
+{
+  "name": "dine_bella_vita",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dine_bella_vita.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bloolizard/dine_bella_vita.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bloolizard/dine_bella_vita/issues"
+  },
+  "homepage": "https://github.com/bloolizard/dine_bella_vita"
+}
