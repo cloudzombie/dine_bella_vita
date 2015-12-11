@@ -1,0 +1,293 @@
+@charset "UTF-8";
+
+/* Global Content Formatting and Styles */
+
+body {
+	color: #575c7a;
+	line-height: 1.5em;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	/*background: #515673 url(../images/background_gradient.jpg) repeat-x 0px 0px;*/
+	
+	background: #000 url(../images/pageBG1.jpg) repeat-y 60% 2%;
+	
+}
+
+.page {
+	max-width: 980px;
+	margin: 50px auto 0;
+	position: relative;
+	/*background-color: #fff;*/
+}
+
+h1 { 
+	color: #fff; 
+	margin: 0em 0em .5em 0em; 
+	font-size: 1.6em; 
+	font-weight: normal; 
+}
+h2 { font-size: 1.4em; margin: 0em 0em 1em 0em; }
+h3 { font-size: 1.2em; margin: 0em 0em 1em 0em; }
+
+p { margin: 0px 0px .75em 0px; }
+a {
+	color: #fff;
+	/**/ text-decoration: none; 
+}
+
+article p {color: white;}
+a:hover { color: #009eff; }
+
+footer { 
+	  font-size: .85em; 	  
+	  color: #fff; 
+	  padding: 50px 10px 10px 0px; }
+	  
+footer#footerForMain {
+	
+	margin: 0 auto;
+	color: #fff;
+	/* display: block;width: 100%;padding: 10px 10px 10px 0px;*/
+	text-align: center;
+	padding: 30px 0px 0px 0px;
+	  }
+	  
+a.cta {
+	color:#8C8CC6;
+	text-transform: none;
+	font-style: italic;
+	font-size: 0.9em;
+	font-weight: bold;
+	text-decoration: none;
+	/*	margin: 5em 0 0 0; */
+	margin-top: 0.5em;
+	padding: 0 12px 0px 0px;
+	/*background: url(../images/cta_arrow.png) no-repeat right 0px;*/
+}
+
+a.cta:hover { 
+			color:#900;
+			background-position: right -50px; }
+			
+									   
+.promo h3, promo2 h3, promo3 h3, promo4 h3 { font-size: 1.1em; margin: 0; }
+.promo p, promo2 p { line-height: 1.2em; font-size: .9em; margin-bottom: .5em; }
+
+.promo, .promo2, promo3, .promozero, .promomenu, .promolunch, .promodinner, .promobanquet, .promodesert, .promowinelist, .promoevents, .promohoursandlocation, .promocontact, .promoabout { background-repeat: no-repeat;}
+
+.promo_container .promozero { background-image: url(../images/page2IPH2.jpg); }
+.promo_container .promolunch { background-image: url(../images/lunch2.jpg); }
+.promo_container .promomenu { background-image: url(../images/lunch3.jpg); }
+.promo_container .promodinner { background-image: url(../images/dinner.jpg); }
+.promo_container .promobanquet { background-image: url(../images/lunch3.jpg); }
+.promo_container .promodesert { background-image: url(../images/desert.jpg); }
+.promo_container .promowinelist { background-image: url(../images/celler1.jpg); }
+.promo_container .promoevents { background-image: url(../images/events.jpg); }
+.promo_container .promohoursandlocation { background-image: url(../images/pitabread.jpg); }
+.promo_container .promocontact { background-image: url(../images/location.jpg); }
+.promo_container .promoabout { background-image: url(../images/chefs.jpg); }
+
+
+
+.promo.one { background-image: url(../images/BV-small.jpg); }
+.promo.two { background-image: url(../images/privateEvents.jpg); }
+.promo.three { background-image: url(../images/promo_1-gift.jpg); }
+
+.pageThree.indent1 { background-image: url(../image/makeReservation_06.png);}
+
+.promo2.one { background-image: url(../images/lounge1-Med.jpg); }
+.promo2.two { background-image: url(../images/patio1-Med.jpg); }
+.promo2.three { background-image: url(../images/bar1.jpg); }
+.promo2.four { background-image: url(../images/cellar2.jpg); }
+.promo2.five { background-image: url(../images/page2IPH-Small.jpg); }
+.promo2.six { background-image: url(../images/page2IPH-Small.jpg); }
+
+/*menus*/
+
+.promo2.menuone { background-image: url(../images/lunch2-Small.jpg); }
+.promo2.menutwo { background-image: url(../images/catering-Small.jpg); }
+.promo2.menuthree { background-image: url(../images/lunch3-Small.jpg); }
+.promo2.menufour { background-image: url(../images/desert-Small.jpg); }
+.promo2.menufive { background-image: url(../images/page2IPH-Small.jpg); }
+.promo2.menusix { background-image: url(../images/page2IPH-Small.jpg); }
+
+/*events*/
+
+.promo4.eventone { background-image: url(../images/christmas12.jpg); background-repeat: no-repeat;}
+.promo4.eventtwo { background-image: url(../images/newyearjazz12.jpg); background-repeat: no-repeat; }
+/*.promo4.eventthree { background-image: url(../images/lunch3-Small.jpg); }
+.promo4.eventfour { background-image: url(../images/desert-Small.jpg); }
+.promo4.eventfive { background-image: url(../images/page2IPH-Small.jpg); }
+.promo4.eventsix { background-image: url(../images/page2IPH-Small.jpg); } */
+
+/*hours and location*/
+
+.promo4.hoursandlocationone { background-image: url(../images/mapsmall.jpg); background-repeat: no-repeat;}
+.promo4.hoursandlocationtwo { background-image: url(../images/qrsmall.jpg); background-repeat: no-repeat; }
+/*.promo4.hoursandlocationthree { background-image: url(../images/lunch3-Small.jpg); }
+.promo4.hoursandlocationfour { background-image: url(../images/desert-Small.jpg); }
+.promo4.hoursandlocationfive { background-image: url(../images/page2IPH-Small.jpg); }
+.promo4.hoursandlocationsix { background-image: url(../images/page2IPH-Small.jpg); } */
+
+
+.promo4.staff1 { background-image: url(../images/ismail.jpg); background-repeat: no-repeat;}
+.promo4.staff2 { background-image: url(../images/seamus.jpg); background-repeat: no-repeat; }
+.promo4.staff3 { background-image: url(../images/miguel.jpg); background-repeat: no-repeat; }
+/*.promo4.hoursandlocationthree { background-image: url(../images/lunch3-Small.jpg); }
+.promo4.hoursandlocationfour { background-image: url(../images/desert-Small.jpg); }
+.promo4.hoursandlocationfive { background-image: url(../images/page2IPH-Small.jpg); }
+.promo4.hoursandlocationsix { background-image: url(../images/page2IPH-Small.jpg); } */
+
+/* Lunch Menu
+
+.promo3.lunchone { background: url(../images/lunch2-Small.jpg)no-repeat; }
+.promo3.lunchtwo { background: url(../images/dinner-Small.jpg)no-repeat; }
+.promo3.lunchthree { background: url(../images/lunch3-Small.jpg) no-repeat; }
+.promo3.lunchfour { background: url(../images/desert-Small.jpg) no-repeat; }
+.promo3.lunchfive { background-image: url(../images/page2IPH-Small.jpg)no-repeat;  }
+.promo3.lunchsix { background-image: url(../images/page2IPH-Small.jpg)no-repeat;  }
+ */
+/*nav li {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	text-transform: None;
+	list-style: none;
+	
+	font-weight: bold;
+	font-size: .8em;
+	*/
+	
+}
+
+/* ul#navi li a { text-decoration: none; } */
+ 
+#navi li a {
+	display: block;
+	padding: 10px 15px;
+	text-decoration: none;
+	color: #fff;
+	line-height: 1.5em;
+	}
+
+#navi1 li a {
+	display: inline;
+	padding: 10px 15px;
+	text-decoration: none;
+	color: #000;
+	line-height: 1.5em;
+	}
+	
+/*
+nav a {
+	color: #f5a06e;
+	text-transform: None;
+	text-decoration: none;
+	////display: inline-block;
+	font-weight: bold;
+	font-size: .9em;
+	margin: 0px auto;
+	
+}
+
+nav li a {
+	background: rgba(0, 0, 0, .5);
+	padding: .2em 0 .2em 1em;
+	border-bottom: .125em solid shite;
+	}
+	*/
+	
+#navi li a:hover, nav li a.active { 
+			color: #900;/*color: #900f; 
+			padding-left: 5px;*/
+			}
+
+#navi li ul {
+	display: none;
+	}
+	
+#navi li ul li a {
+	padding: 10px 25px;
+	
+	}
+	
+#navi, footer, #navlist {
+	/*clear: both;
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;*/
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	font-variant:small-caps;
+	text-transform: none;
+	letter-spacing: .1em;
+	line-height: 1.8em;
+}
+
+footer {letter-spacing: .1em;}
+#navlist {letter-spacing: 0em;}
+
+/*------------------*/
+
+/*#navcontainer { margin: 0px auto; } */
+
+/*#navlist
+{	
+	color: #fff;
+	clear: both;
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;	
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 0.8em;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: none;
+}*/
+
+#navlist li
+{
+	list-style: none;
+	/*color: #fff;
+	margin: 0 auto;
+	border-top: 1px solid gray;*/
+	display: inline;
+}
+
+#navlist li a
+{
+	
+	padding: 0.25em;
+	/* color: #fff;
+	border-left: 1em solid #AAB;
+	background: #CCD; */
+	text-decoration: none;
+}
+/*
+#navlist li a:link { color: #448; }
+#navlist li a:visited { color: #667; }
+*/
+#navlist li a:hover
+{
+color: #900;
+/*	border-color: #FE3;
+	background: #332; */
+}
+
+/********** contact form **********/
+#contactform { margin:0; padding:5px; }
+#contactform * { color:#605f5f; }
+#contactform ol { margin:0; padding:0; list-style:none; }
+#contactform li { margin:5px 0; padding:0; background:none; border:none; display:block; clear:both; height:30px; }
+#contactform li.buttons { margin:5px 0; clear:both; }
+#contactform label { margin:0; width:80px; padding:5px 0; color:#565656; font:normal 12px Arial, Helvetica, sans-serif; text-transform:capitalize; }
+#contactform label span { color:#605f5f; }
+#contactform input.text { width:400px; border:1px solid #e1e1e1; margin:0 20px 0 0; padding:5px; height:16px; background:#f8f8f8; float:left; }
+#contactform textarea { width:250px; border:1px solid #e1e1e1; margin:0 20px 0 0; padding:5px; background:#f8f8f8; float:left; }
+#contactform li.buttons input { padding:3px 0 3px 0px; margin:10px 0 0 0; border:0; color:#FFF; float:left; }
+			
+
+.clear-fix { clear: both; line-height: 1px; }

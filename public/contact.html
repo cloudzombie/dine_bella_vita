@@ -1,0 +1,311 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Contact Us</title>
+        		<link rel="stylesheet" type="text/css" href="css/screen_styles.css" />
+		<link rel="stylesheet" type="text/css" href="css/screen_layout_large.css" />
+		<link rel="stylesheet" type="text/css" media="only screen and (min-width:50px) and (max-width:500px)"   href="css/screen_layout_small.css">
+		<link rel="stylesheet" type="text/css" media="only screen and (min-width:501px) and (max-width:800px)"  href="css/screen_layout_medium.css">
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+    
+<script type="text/javascript" src="jquery-1.8.2.min.js"></script>
+
+<script>
+
+$(document).ready(function () {
+  $('#navi > li > a').click(function(){
+    if ($(this).attr('class') != 'active'){
+      $('#navi li ul').slideUp();
+      $(this).next().slideToggle();
+      $('#navi li a').removeClass('active');
+      $(this).addClass('active');
+    }
+  });
+});
+
+</script>
+
+<script language="JavaScript" type="text/javascript">
+/* jQ ready */
+ $(document).ready(function(){ 
+ /* Array of images */
+
+ 
+ });
+</script>    
+       
+        
+</head>
+<body>
+
+		<div class="page">
+		<header class="pageN">
+				<a class="logo one" href="index.html"></a>
+                <a class="logo two" href="contact.html"></a>
+                <a class="logo three" href="http://www.opentable.com/single.aspx?rid=58231&restref=58231"></a>
+		</header>
+
+			<!-- -->
+     <div class="promo_container page2">
+            	<div class="promocontact">
+					<div class="content">
+						<!--<h3>Wine List</h3>
+						<p>We boast an exclusive Italian-style courtyard, dubbed the "Corta Bella" with wood beamed ceilings & artistic treasures that would make Michelangelo smile!</p>-->
+						
+					</div> 
+				</div>
+                
+    		<div class="promoAdjust">
+    			<div class="promo3 lunchone">
+					<div class="content">
+						<h3>Contact Us</h3>
+                        <p>Please let us know how we are doing and how we can serve you better. Also you may want to consider joining our mailing list for our upcoming events.</p>
+                        <p>E-mail: ristorantebellavita@gmail.com<br />
+                        Phone: (650)917-0300<br />
+                        Fax: (650)917-0464 </p>
+                        <form name="frm" action="/cgi-bin/FormMail.contact.pl" method="post" onSubmit="return validate(frm)">
+                          <table width="750" border="0" cellspacing="0" cellpadding="0">  <tr>
+                            <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td>&nbsp;</td>
+                            </tr>
+                            
+                            <tr>
+                              <td class="text">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td class="text"><table width="81%" border="0" cellspacing="6" cellpadding="0">
+                                <tr>
+                                  <td>&nbsp;</td>
+                                  <td class="text"><div align="left">Name</div></td>
+                                  <td colspan="3"><input type="text" name="Name"></td>
+                                </tr>
+                                <tr>
+                                  <td>&nbsp;</td>
+                                  <td class="text"><div align="left">Email</div></td>
+                                  <td colspan="3"><input type="text" name="formmail_mail_email"></td>
+                                </tr>
+                                <tr>
+                                  <td>&nbsp;</td>
+                                  <td class="text"><div align="left">Company</div></td>
+                                  <td colspan="3"><input type="text" name="Company"></td>
+                                </tr>
+                                <tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td><div align="left"></div></td>
+                                    <td colspan="3">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td valign="top" class="text">&nbsp;</td>
+                                  <td valign="top" class="text"><div align="left">Message</div></td>
+                                  <td colspan="3"><textarea name="Message" cols="45" rows="10"></textarea></td>
+                                </tr>
+                                <tr>
+                                  <td>&nbsp;</td>
+                                  <td>&nbsp;</td>
+                                  <td width="35%">&nbsp;</td>
+                                  <td width="13%">&nbsp;</td>
+                                  <td width="35%">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td>&nbsp;</td>
+                                  <td>&nbsp;</td>
+                                  <td><input type="submit" name="Submit" value="Submit">
+                                    <input type="reset" name="Submit" value="Clear"></td>
+                                  <td>&nbsp;</td>
+                                  <td>&nbsp;</td>
+                                </tr>
+                                </table></td>
+                            </tr>
+                            <tr>
+                              <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td>&nbsp;</td>
+                            </tr>
+                          </table>
+</form>
+	<script language="javascript">
+	function validate(frm) {
+		var inputFields = new Array("Name" ,"formmail_mail_email");
+		var counter;
+		var name;
+		var msg = "Please complete the following fields:\n";
+		var badFields = "";
+		for (counter = 0; counter < inputFields.length; counter++) {
+			name = inputFields[counter];
+			if (frm.elements[name].value.length == 0) {
+				if (name == "formmail_mail_email") {
+					badFields = badFields + "  - Email \n";
+				} else {
+					badFields = badFields + "  - " + name + "\n";
+				}
+			}
+		}
+		if (badFields.length != 0) {
+			alert(msg + badFields);
+			return false;
+		}
+		if (frm.formmail_mail_email.value.length > 0) {
+			return emailCheck(frm.formmail_mail_email.value);
+		} else {
+			return true;
+		}
+	}
+
+	function emailCheck(emailStr) {
+		var emailPat=/^(.+)@(.+)$/;
+		var specialChars="\\(\\)<>@,;:\\\\\\\"\\.\\[\\]";
+		var validChars="\[^\\s" + specialChars + "\]";
+		var quotedUser="(\"[^\"]*\")";
+		var ipDomainPat=/^\[(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})\]$/;
+		var atom=validChars + '+';
+		var word="(" + atom + "|" + quotedUser + ")";
+		var userPat=new RegExp("^" + word + "(\\." + word + ")*$");
+		var domainPat=new RegExp("^" + atom + "(\\." + atom +")*$");
+		var matchArray=emailStr.match(emailPat);
+
+		if (matchArray==null) {
+			alert("Email address seems incorrect (check @ and .'s)");
+			return false;
+		}
+
+		var user=matchArray[1];
+		var domain=matchArray[2];
+
+		if (user.match(userPat)==null) {
+    			alert("The username doesn't seem to be valid.");
+			return false;
+		}
+
+		var IPArray=domain.match(ipDomainPat);
+		if (IPArray!=null) {
+	  		for (var i=1;i<=4;i++) {
+			    if (IPArray[i]>255) {
+		        	alert("Destination IP address is invalid!");
+				return false;
+	 	   		}
+    			}
+    			return true;
+		}
+
+		var domainArray=domain.match(domainPat);
+		if (domainArray==null) {
+			alert("The domain name doesn't seem to be valid.");
+
+    			return false;
+		}
+
+		var atomPat=new RegExp(atom,"g");
+		var domArr=domain.match(atomPat);
+		var len=domArr.length;
+		if (domArr[domArr.length-1].length<2 || domArr[domArr.length-1].length>3) {
+		   alert("The address must end in a three-letter domain, or two letter country.");
+   			return false;
+		}
+
+		if (len<2) {
+   			var errStr="This address is missing a hostname!";
+			alert(errStr);
+   		return false;
+		}
+
+ 		return true;
+	}
+</script>
+
+						<!-- <p><a class="cta" href="">Print Event Manu</a></p> -->
+					</div>
+				</div>
+<!--				<div class="promo3 lunchtwo">
+					<div class="content">
+						<h3>Entree-Secondi</h3>
+						<p><p><b>POLENTA</b> Grilled polenta cakes with mushrooms and gorgonzola cheese in Marsala wine sauce $9.95 </p>
+
+<p><b>FRITTURA DI CALAMARI</b> Lightly fried semolina coated calamari served with our homemade cocktail </p>
+
+<p>and tartar sauce $11.95 </p>
+
+<p><b>ROLLATINI DI MELANZANE</b> Thin slices of grilled eggplant, rolled and baked with sundried tomatoes, basil, and goat cheese, in a tomato cream sauce $11.95 </p>
+
+<p><b>TORTINO DI GRANCHIO</b> Pan fried crab cakes on organic mixed greens with homemade roasted garlic and lemon aioli $11.95</p>
+
+<p><b>PORTOBELLO AI FUNGHI</b> Portobello mushroom topped with spinach and Gorgonzola cheese, in a balsamic red wine-infused demi-glace sauce $11.95</p>
+</p>
+						<p><a class="cta" href="">Read more</a></p>
+					</div>
+				</div>
+                
+                               
+				<div class="promo3 lunchthree">
+					<div class="content">
+						<h3>Banquet Menu</h3>
+						<p>Located in Los Altos, Ristorante Bella Vita, offers lunch and dinner selections, banquet space, and cozy enclosed patio with bubbling water fountains. Located in Los Altos, Ristorante Bella Vita, offers lunch and dinner selections, banquet space, and cozy enclosed patio with bubbling water fountains. Located in Los Altos, Ristorante Bella Vita, offers lunch and dinner selections, banquet space, and cozy enclosed patio with bubbling water fountains.</p>
+						<p><a class="cta" href="">Read more</a></p>
+					</div>
+				</div> 
+                
+                <div class="promo3 lunchfour">
+					<div class="content">
+						<h3>Desert Menu</h3>
+						<p>Located in Los Altos, Ristorante Bella Vita, offers lunch and dinner selections, banquet space, and cozy enclosed patio with bubbling water fountains. Located in Los Altos, Ristorante Bella Vita, offers lunch and dinner selections, banquet space, and cozy enclosed patio with bubbling water fountains. Located in Los Altos, Ristorante Bella Vita, offers lunch and dinner selections, banquet space, and cozy enclosed patio with bubbling water fountains.</p>
+						<p><a class="cta" href="">Read more</a></p>
+					</div>
+				</div> -->
+                
+                <div class="clear-fix"></div>
+		</div>
+     </div>
+			<nav>
+				<ul id="navi">
+					<li><a href="restaurant.html">restaurant</a></li>
+                    <li><a href="#">food & wine</a>
+                    	<ul>
+                        	<li><a href="lunchmenu.html">lunch</a></li>
+                            <li><a href="dinnermenu.html">dinner</a></li>
+                            <li><a href="privatedining.html">private dining</a></li> 
+                            <li><a href="PDF/catering.pdf">catering</a></li>
+                            <li><a href="desertmenu.html">desert</a></li>
+                            <li><a href="winelist.html">wine list</a></li>
+                        </ul>
+                     </li>
+					<li><a href="privatedining.html">private dining</a></li>
+                    <li><a href="events.html">events</a></li>
+					<li><a href="staff.html">about</a></li>
+                    <li><a href="#">gift card</a></li>
+                    <li><a href="hoursandlocation.html">hours & location</a></li>
+                    <li><a href="gallery.html">gallery</a></li>
+                    <li><a href="contact.html">contact us</a></li>
+				</ul>
+			</nav>
+            
+            <!-- <nav>
+				<a href="#">About Us</a>
+				<a href="#">Services</a>
+				<a href="#">Portfolio</a>
+				<a href="#">Contact Us</a>
+			</nav> -->
+            
+			<footer>
+				&copy; ristorante bella vita<br />
+                650.917.0300<br />
+                376 first street<br />
+                los altos, ca 94022
+                              
+			</footer>
+		</div>
+
+        
+  </body>
+</html>

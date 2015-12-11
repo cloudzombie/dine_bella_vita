@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Ristornate Bella Vita</title>
+        		<link rel="stylesheet" type="text/css" href="css/screen_styles.css" />
+		<link rel="stylesheet" type="text/css" href="css/screen_layout_large.css" />
+		<link rel="stylesheet" type="text/css" media="only screen and (min-width:50px) and (max-width:500px)"   href="css/screen_layout_small.css">
+		<link rel="stylesheet" type="text/css" media="only screen and (min-width:501px) and (max-width:800px)"  href="css/screen_layout_medium.css">
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+    
+<script type="text/javascript" src="jquery-1.8.2.min.js"></script>
+
+<script>
+
+$(document).ready(function () {
+  $('#navi > li > a').click(function(){
+    if ($(this).attr('class') != 'active'){
+      $('#navi li ul').slideUp();
+      $(this).next().slideToggle();
+      $('#navi li a').removeClass('active');
+      $(this).addClass('active');
+    }
+  });
+});
+
+</script>
+
+<!--<script>
+	$(document).ready(function(){
+							   alert('ready for position');
+							   });
+</script>-->
+
+<script language="JavaScript" type="text/javascript">
+/* jQ ready */
+ $(document).ready(function(){ 
+ /* Array of images */
+ var imgArr = new Array( 
+ 'images/A-design_24.jpg',
+ 'images/A-design_23.jpg',
+ 'images/A-design_3.jpg',
+ 'images/A-design_4.jpg'
+ );
+ 
+ var preloadArr = new Array();
+ var i;
+ 
+ /* preload images */
+ for(i=0; i < imgArr.length; i++){
+ preloadArr[i] = new Image();
+ preloadArr[i].src = imgArr[i];
+ }
+ 
+ var currImg = 1;
+ var intID = setInterval(changeImg, 6000);
+ 
+ /* image rotator */
+ function changeImg(){
+ $('header').animate({opacity: 0}, 1000, function(){
+ $(this).css('background','url(' + preloadArr[currImg++%preloadArr.length].src +') top center no-repeat');
+ }).animate({opacity: 1}, 1000);
+ }
+ 
+ });
+</script>    
+
+<!------------------------------------------->
+
+
+        <!--<script type="text/javascript" src="includes/jquery-1.5.min.js"></script>-->
+		
+		
+		<script type="text/javascript" src="includes/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+		
+		<script type="text/javascript" src="includes/farinspace/jquery.imgpreload.min.js"></script>
+		
+		<link rel="stylesheet" type="text/css" href="includes/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="includes/gallery.css" />
+		
+		<script type="text/javascript" src="includes/gallery.js"></script>
+
+
+<!-------------------------------------------> 
+       
+        
+</head>
+<body>
+
+<div class="page">
+    <div class="pageLogo">
+                    
+                    <!--<a class="logo one" href="index.html"></a>-->
+                    <a class="logo two" href="contact.html"></a>
+    </div>
+
+		 	<div class="page-03-1"><!-- <article> -->
+		<div class="gallery_container">
+<!--			<div class="gallery_credit"><h1></h1></div>
+			<div class="gallery_type"><h2>// Photography</h2></div>
+			<div class="clear_both"></div>
+			<div class="gallery_top"></div> -->
+			<div class="gallery_content">
+            <h3 style="font-size:24px; color: white;">Gallery</h3>
+				<div class="gallery_thumbnails">
+					<a href="images/gallery/img01_fullsize.jpg" title=""><img src="images/gallery/img01_thumbs.jpg"/></a>
+					<a href="images/gallery/img02_fullsize.jpg" title=""><img src="images/gallery/img02_thumbs.jpg"/></a>
+					<a href="images/gallery/img03_fullsize.jpg" title=""><img src="images/gallery/img03_thumbs.jpg"/></a>
+					<a href="images/gallery/img04_fullsize.jpg" title=""><img src="images/gallery/img04_thumbs.jpg"/></a>
+					<a href="images/gallery/img05_fullsize.jpg" title=""><img src="images/gallery/img05_thumbs.jpg"/></a>
+					<a href="images/gallery/img06_fullsize.jpg" title=""><img src="images/gallery/img06_thumbs.jpg"/></a>
+					<a href="images/gallery/img07_fullsize.jpg" title=""><img src="images/gallery/img07_thumbs.jpg"/></a>
+					<a href="images/gallery/img08_fullsize.jpg" title=""><img src="images/gallery/img08_thumbs.jpg"/></a>
+					<a href="images/gallery/img09_fullsize.jpg" title=""><img src="images/gallery/img09_thumbs.jpg"/></a>
+					<a href="images/gallery/img10_fullsize.jpg" title=""><img src="images/gallery/img10_thumbs.jpg"/></a>
+					<a href="images/gallery/img11_fullsize.jpg" title=""><img src="images/gallery/img11_thumbs.jpg"/></a>
+					<a href="images/gallery/img12_fullsize.jpg" title=""><img src="images/gallery/img12_thumbs.jpg"/></a>
+					<a href="images/gallery/img13_fullsize.jpg" title=""><img src="images/gallery/img13_thumbs.jpg"/></a>
+					<a href="images/gallery/img14_fullsize.jpg" title=""><img src="images/gallery/img14_thumbs.jpg"/></a>
+					<a href="images/gallery/img15_fullsize.jpg" title=""><img src="images/gallery/img15_thumbs.jpg"/></a>
+					<a href="images/gallery/img16_fullsize.jpg" title=""><img src="images/gallery/img16_thumbs.jpg"/></a>
+					<a href="images/gallery/img17_fullsize.jpg" title=""><img src="images/gallery/img17_thumbs.jpg"/></a>
+					<a href="images/gallery/img18_fullsize.jpg" title=""><img src="images/gallery/img18_thumbs.jpg"/></a>
+					<a href="images/gallery/img19_fullsize.jpg" title=""><img src="images/gallery/img19_thumbs.jpg"/></a>
+					<a href="images/gallery/img20_fullsize.jpg" title=""><img src="images/gallery/img20_thumbs.jpg"/></a>
+                    <a href="images/gallery/img21_fullsize.jpg" title=""><img src="images/gallery/img21_thumbs.jpg"/></a>
+                    <a href="images/gallery/img22_fullsize.jpg" title=""><img src="images/gallery/img22_thumbs.jpg"/></a>
+                    <a href="images/gallery/img23_fullsize.jpg" title=""><img src="images/gallery/img23_thumbs.jpg"/></a>
+                    <a href="images/gallery/img24_fullsize.jpg" title=""><img src="images/gallery/img24_thumbs.jpg"/></a>
+                    <a href="images/gallery/img25_fullsize.jpg" title=""><img src="images/gallery/img25_thumbs.jpg"/></a>
+                    
+					<div class="clear_both"></div>
+				</div> <!-- gallery_thumbnails -->
+				<div class="gallery_preview">
+					<a href="images/gallery/acrobats_large.jpg"></a>
+				</div>
+				<div class="clear_both"></div>
+				<!--<div class="gallery_contact"><p><a class="contactLink" href="mailto:itlayer@gmail.com">Contact Us</a></p></div> -->
+				<!--<div class="gallery_caption"></div>-->
+				<div class="clear_both"></div>
+				<div class="gallery_preload_area"></div>
+			</div> <!-- gallery_content -->
+<!--			<div class="gallery_bottom"></div> -->
+		</div> <!-- gallery_container -->
+
+<!--<p>&nbsp;</p>-->
+</div> <!-- page-03 -->
+
+
+<!--<header class="pageOne">
+</header>-->
+
+<!--<div class="pageThree">
+                <a class="indent1" href="#"></a>
+               
+    </div>-->
+
+  <nav id="navcontainer">
+                  <ul id="navlist">
+                      <li id="active"><a href="restaurant.html" id="current">restaurant</a></li>
+                      <li><a href="menu.html">menu</a></li>
+                      <li><a href="privatedining.html">private dining</a></li>
+                      <li><a href="events.html">current events</a></li>
+                      <li><a href="staff.html">about</a></li>
+                      <li><a href="contact3.php">contact us</a></li>
+                  </ul>
+            </nav>
+            
+<!-- CC Audio -->	
+
+<!-- CC Audio -->	
+
+
+	
+<!-- <article>
+    <h1>A Fine Italian Dinning Experience</h1>
+    <p>Ristorante Bella Vita is an Authentic Italian Restaurant, located in Los Altos, offering lunch and dinner selections, banquet space, and cozy enclosed patio with bubbling water fountains. 
+    Our dishes are prepared only with the finest and freshest ingredients and our wine cellar is filled with both foreign and domestic vintages. Choose one by the glass or uncork a bottle in celebration. Ristorante Bella Vita opened its doors in Spring 2003 and has since been satisfying the cravings of its customers. Come in and enjoy the taste of the authentic italian food or browse our web site and be sure to visit the virtual tours of our Bar, Dining Room, Sala Bella Vita, and the Wine Celler!</p>
+</article> -->
+
+
+
+<div class="clear-fix"></div>
+            
+ 		
+		<footer id="footerForMain">
+				&copy; ristorante bella vita <br />376 first street los altos, ca 94022 - reservations: 650.917.0300<br />
+                site design by <a href="http://www.itlayer.com">itlayer </a>                
+                <div>
+                		
+                </div>
+
+                
+			</footer>
+		</div>
+
+        
+  </body>
+</html>
