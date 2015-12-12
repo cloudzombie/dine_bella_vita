@@ -8,7 +8,7 @@ var transporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
         user: 'dinebellavitawebmailer@gmail.com',
-        pass: 'BellaVita1'
+        pass: process.env.GMAILER_SECRET
     }
 });
 
