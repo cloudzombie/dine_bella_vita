@@ -18,3 +18,13 @@ Router.route('/events', function () {
     });
 });
 
+Router.route('/contact', function () {
+    this.render('contact', {
+    });
+});
+
+Router.route('/thankyou', function () {
+    this.render('thank_you', {
+    });
+});
+

@@ -16,7 +16,7 @@ var transporter = nodemailer.createTransport({
 
 Router.route('/contact', {where: 'server'}).post(function(){
     var request = this.request.body;
-    var to = request.to, subject = request.subject, body = request.body;
+    var to = "edwincv0@gmail.com", subject = request.subject, body = request.body;
     sendMail(to, subject, body);
     var json = {"result":"success"}; // what ever data you want to return
     this.response.setHeader('Content-Type', 'application/json');
@@ -29,6 +29,10 @@ function sendMail(to, subject, body){
         to: to,
         subject: subject,
         text: body
+    }, function(error, info){
+        if (error){
+            console.log(error);
+        }
     });
 }
 
