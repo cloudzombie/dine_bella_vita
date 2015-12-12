@@ -1,4 +1,4 @@
-var nodemailer = Npm.require('nodemailer');
+var nodemailer = Meteor.npmRequire('nodemailer');
 
 Meteor.startup(function(){
     console.log('Starting the Meteor Up.');
