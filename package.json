@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/bloolizard/dine_bella_vita/issues"
   },
-  "homepage": "https://github.com/bloolizard/dine_bella_vita"
+  "homepage": "https://github.com/bloolizard/dine_bella_vita",
+  "devDependencies": {
+    "nodemailer": "^1.10.0"
+  }
 }
