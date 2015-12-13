@@ -1,0 +1,69 @@
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Ristornate Bella Vita</title>
+    <link rel="stylesheet" type="text/css" href="css/screen_styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/screen_layout_large.css" />
+    <link rel="stylesheet" type="text/css" media="only screen and (min-width:50px) and (max-width:500px)"   href="css/screen_layout_small.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (min-width:501px) and (max-width:800px)"  href="css/screen_layout_medium.css">
+    <!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+    <script type="text/javascript" src="jquery-1.8.2.min.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+            $('#navi > li > a').click(function(){
+                if ($(this).attr('class') != 'active'){
+                    $('#navi li ul').slideUp();
+                    $(this).next().slideToggle();
+                    $('#navi li a').removeClass('active');
+                    $(this).addClass('active');
+                }
+            });
+        });
+
+    </script>
+
+    <!--<script>
+        $(document).ready(function(){
+                                   alert('ready for position');
+                                   });
+    </script>-->
+
+    <script language="JavaScript" type="text/javascript">
+        /* jQ ready */
+        $(document).ready(function(){
+            /* Array of images */
+            var imgArr = new Array(
+                    'images/A-design_24.jpg',
+                    'images/A-design_23.jpg',
+                    'images/A-design_3.jpg',
+                    'images/A-design_4.jpg'
+            );
+
+            var preloadArr = new Array();
+            var i;
+
+            /* preload images */
+            for(i=0; i < imgArr.length; i++){
+                preloadArr[i] = new Image();
+                preloadArr[i].src = imgArr[i];
+            }
+
+            var currImg = 1;
+            var intID = setInterval(changeImg, 6000);
+
+            /* image rotator */
+            function changeImg(){
+                $('header').animate({opacity: 0}, 1000, function(){
+                    $(this).css('background','url(' + preloadArr[currImg++%preloadArr.length].src +') top center no-repeat');
+                }).animate({opacity: 1}, 1000);
+            }
+
+        });
+    </script>
+
+
+</head>
