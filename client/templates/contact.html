@@ -235,10 +235,7 @@
                                 var message = $(this).find('.message').val();
                                 var subject = name + " <" + email + "> from  " + company + " left you a message.";
 
-                                $.post('/contact', {
-                                    subject: subject,
-                                    body: message
-                                }).success(function(){
+                                Meteor.call('sendEmail', subject, message, function(){
                                     window.location.href = '/thankyou';
                                 });
                             });
