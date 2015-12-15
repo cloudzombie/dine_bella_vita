@@ -16,17 +16,34 @@ var dineBellaVitaApp = angular.module('dinebellavita', ['angular-meteor', 'ui.ro
                 })
                 .state('restaurant.foodWine', {
                     url: '/foodWine',
-                    templateUrl: 'client/ng-templates/restaurant/restaurant.ng.html'
+                    templateUrl: 'client/ng-templates/restaurant/foodwine.ng.html'
+                })
+                .state('restaurant.privateDining', {
+                    url: '/privateDining',
+                    templateUrl: 'client/ng-templates/restaurant/privatedining.ng.html'
                 })
                 .state('restaurant.events', {
                     url: '/events',
-                    templateUrl: 'client/ng-templates/restaurant/restaurant.ng.html'
+                    templateUrl: 'client/ng-templates/restaurant/events.ng.html'
                 })
                 .state('restaurant.about', {
                     url: '/about',
-                    templateUrl: 'client/ng-templates/restaurant/restaurant.ng.html'
+                    templateUrl: 'client/ng-templates/restaurant/about.ng.html'
                 })
-                .state('restaurant.contact', {
+                .state('restaurant.giftCard', {
+                    url: '/giftCard',
+                    templateUrl: 'client/ng-templates/restaurant/giftcard.ng.html'
+                })
+                .state('restaurant.hoursAndLocation', {
+                    url: '/hoursAndLocation',
+                    templateUrl: 'client/ng-templates/restaurant/hoursandlocation.ng.html'
+                })
+                .state('restaurant.gallery', {
+                    url: '/gallery',
+                    templateUrl: 'client/ng-templates/restaurant/gallery.ng.html'
+                })
+
+            .state('restaurant.contact', {
                     url: '/contact',
                     templateUrl: 'client/ng-templates/restaurant/contact.ng.html'
                 });
