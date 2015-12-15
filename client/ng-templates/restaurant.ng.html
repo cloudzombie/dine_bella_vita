@@ -1,4 +1,4 @@
-<div  class="page">
+<div ng-controller="HomeMainController"  class="page">
     <header class="pageN">
         <a class="logo one" href="index.html"></a>
         <a class="logo two" href="contact"></a>
@@ -10,7 +10,7 @@
     <nav>
         <ul id="navi">
             <li><a href="#/restaurant">restaurant</a></li>
-            <li><a href="#">food & wine</a>
+            <li><a ng-click="expandMenu($event)" href="#">food & wine</a>
                 <ul>
                     <li><a href="lunchmenu.html">lunch</a></li>
                     <li><a href="dinnermenu.html">dinner</a></li>
