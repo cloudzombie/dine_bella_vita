@@ -38,15 +38,16 @@ var dineBellaVitaApp = angular.module('dinebellavita', ['angular-meteor', 'ui.ro
                     url: '/hoursAndLocation',
                     templateUrl: 'client/ng-templates/restaurant/hoursandlocation.ng.html'
                 })
-                .state('restaurant.gallery', {
-                    url: '/gallery',
-                    templateUrl: 'client/ng-templates/restaurant/gallery.ng.html'
-                })
+
 
             .state('restaurant.contact', {
                     url: '/contact',
                     templateUrl: 'client/ng-templates/restaurant/contact.ng.html'
-                });
+                })
+            .state('gallery', {
+                url: '/gallery',
+                templateUrl: 'client/ng-templates/gallery.ng.html'
+            });
     }]);
 
 dineBellaVitaApp.controller('HomeMainController', ['$scope', function($scope){
