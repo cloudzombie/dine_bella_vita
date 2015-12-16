@@ -14,7 +14,7 @@ var transporter = nodemailer.createTransport({
 
 Meteor.methods({
     'sendEmail': function(subject, body){
-        var to = "edwincv0@gmail.com, janismail88@gmail.com";
+        var to = "edwincv0@gmail.com, dine@dinebellavita.com";
         sendMail(to, subject, body);
     }
 });
