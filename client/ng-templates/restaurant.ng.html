@@ -1,0 +1,47 @@
+<div ng-controller="HomeMainController"  class="page">
+    <header class="pageN">
+        <a class="logo one" href="#/"></a>
+        <a class="logo two" href="#/contact"></a>
+        <a class="logo three" href="http://www.opentable.com/single.aspx?rid=58231&restref=58231"></a>
+    </header>
+
+    <!-- -->
+    <div ui-view="" class="promo_container page2"></div>
+    <nav>
+        <ul id="navi">
+            <li><a href="#/restaurant">restaurant</a></li>
+            <li><a ng-click="expandMenu($event)" href="#">food & wine</a>
+                <ul>
+                    <li><a href="#/lunch">lunch</a></li>
+                    <li><a href="#/dinner">dinner</a></li>
+                    <li><a href="#/privateDining">private dining</a></li>
+                    <li><a href="PDF/catering.pdf">catering</a></li>
+                    <li><a href="#/desert">desert</a></li>
+                    <li><a href="#/winelist">wine list</a></li>
+                </ul>
+            </li>
+            <li><a href="#/privateDining">private dining</a></li>
+            <li><a href="#/events">events</a></li>
+            <li><a href="#/about">about</a></li>
+            <!--<li><a href="#/giftCard">gift card</a></li>-->
+            <li><a href="#/hoursAndLocation">hours & location</a></li>
+            <li><a href="#/gallery">gallery</a></li>
+            <li><a href="#/contact">contact us</a></li>
+        </ul>
+    </nav>
+
+    <!-- <nav>
+        <a href="#">About Us</a>
+        <a href="#">Services</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact Us</a>
+    </nav> -->
+
+    <footer>
+        &copy; ristorante bella vita<br />
+        650.917.0300<br />
+        376 first street<br />
+        los altos, ca 94022
+
+    </footer>
+</div>
