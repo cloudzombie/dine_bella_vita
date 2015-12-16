@@ -42,6 +42,11 @@
                                     </tr>
                                     <tr>
                                         <td>&nbsp;</td>
+                                        <td class="text"><div align="left">Phone</div></td>
+                                        <td colspan="3"><input type="text" class="phone" name="formmail_mail_phone"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
                                         <td class="text"><div align="left">Company</div></td>
                                         <td colspan="3"><input type="text" class="company" name="Company"></td>
                                     </tr>
@@ -182,12 +187,24 @@
 //                                        Message: message
                         var name = $(this).find('.name').val();
                         var email = $(this).find('.email').val();
+                        var phone = $(this).find('.phone').val();
                         var company = $(this).find('.company').val();
-                        var message = $(this).find('.message').val();
+                        var message = $(this).find('.message').val() + " from- " + phone;
                         var subject = name + " <" + email + "> from  " + company + " left you a message.";
 
+                        mixpanel.identify(email); // IDs user for MixPanel
+                        mixpanel.people.set({ //sets up User Profile
+                            "$email": email,
+                            "$phone": phone,
+                            "$name": name
+                        });
+                        mixpanel.track("Submitted Contact Form from " + email, {
+                            company: company,
+                            subject: subject,
+                            message: message
+                        });
                         Meteor.call('sendEmail', subject, message, function(){
-                            window.location.href = '/thankyou';
+                            window.location.href = '#/thankyou';
                         });
                     });
                 </script>

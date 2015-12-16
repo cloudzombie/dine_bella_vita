@@ -2,6 +2,7 @@ var dineBellaVitaApp = angular.module('dinebellavita', ['angular-meteor', 'ui.ro
 
 dineBellaVitaApp.controller('HomeMainController', ['$scope', function($scope){
     console.log("Home Main Controller Loaded");
+    mixpanel.track("Landed on Home.");
     $scope.expandMenu = function($event){
         $event.preventDefault();
         var el = $event.currentTarget;

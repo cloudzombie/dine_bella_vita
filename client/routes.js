@@ -63,6 +63,10 @@ angular.module('dinebellavita').config(['$stateProvider','$urlRouterProvider', f
                 url: '/contact',
                 templateUrl: 'client/ng-templates/restaurant/contact.ng.html'
             })
+            .state('restaurant.thankyou', {
+                url: '/thankyou',
+                templateUrl: 'client/ng-templates/restaurant/thankyou.ng.html'
+            })
             .state('gallery', {
                 url: '/gallery',
                 templateUrl: 'client/ng-templates/gallery.ng.html'
