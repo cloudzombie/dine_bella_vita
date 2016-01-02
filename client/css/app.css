@@ -1,0 +1,14 @@
+.about p {
+    width:55%;
+    float: left;
+}
+
+.about img {
+    width: 30%;
+    float: right;
+}
+
+img.thumb {
+    width: 75px;
+    height: 75px;
+}
