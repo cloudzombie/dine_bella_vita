@@ -19,6 +19,10 @@ a.private_dining {
     font-weight: 800;
 }
 
+a.private_dining.home {
+    font-size: 10px;
+}
+
 .private_dining_images {
     margin-left: 25px;
 }
@@ -38,4 +42,10 @@ a.private_dining {
     min-height: 175px;
     background-size: 140px 175px;
     background-image: url("/images/dining_hall.jpg");
+}
+
+#carousel img {
+    max-width: 100%;
+    max-height: 630px;
+    overflow: hidden;
 }

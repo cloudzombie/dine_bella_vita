@@ -1,9 +1,10 @@
-angular.module('dinebellavita').config(['$stateProvider','$urlRouterProvider', function($stateProvider, $urlRouterProvider){
+dineBellaVitaApp.config(['$stateProvider','$urlRouterProvider', function($stateProvider, $urlRouterProvider){
         $urlRouterProvider.otherwise('/');
         $stateProvider
             .state('home', {
                 url: '/',
-                templateUrl: 'client/ng-templates/home.ng.html'
+                templateUrl: 'client/ng-templates/home.ng.html',
+                controller: "HomeController"
             })
             .state('restaurant', {
                 templateUrl: 'client/ng-templates/restaurant.ng.html'

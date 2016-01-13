@@ -1,5 +1,3 @@
-var dineBellaVitaApp = angular.module('dinebellavita', ['angular-meteor', 'ui.router']);
-
 dineBellaVitaApp.controller('HomeMainController', ['$scope', function($scope){
     console.log("Home Main Controller Loaded");
     mixpanel.track("Landed on Home.");
@@ -42,5 +40,7 @@ dineBellaVitaApp.controller('ContactController', ['$scope', function($scope){
     console.log("Contact Controller Loaded");
 
 }]);
+
+
 
 
