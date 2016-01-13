@@ -12,3 +12,18 @@ img.thumb {
     width: 75px;
     height: 75px;
 }
+
+a.private_dining {
+    color: red;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.private_dining_images {
+    margin-left: 25px;
+}
+
+.private_dining_images img {
+    width:40%;
+    height: 280px;
+}
