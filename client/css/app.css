@@ -27,3 +27,15 @@ a.private_dining {
     width:40%;
     height: 280px;
 }
+
+.promo2.private_wine_room {
+    min-height: 175px;
+    background-size: 140px 175px;
+    background-image: url("/images/wine_room_02.jpg");
+}
+
+.promo2.private_cortabella_room {
+    min-height: 175px;
+    background-size: 140px 175px;
+    background-image: url("/images/dining_hall.jpg");
+}
