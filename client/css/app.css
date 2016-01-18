@@ -46,6 +46,7 @@ a.private_dining.home {
 
 #carousel img {
     max-width: 100%;
-    max-height: 630px;
+    object-fit: contain;
     overflow: hidden;
+
 }
