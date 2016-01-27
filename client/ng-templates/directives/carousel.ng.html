@@ -1,13 +1,13 @@
 <div id="carousel">
-    <img src="/images/gallery/img25_fullsize.jpg" alt=""/>
-    <img src="/images/gallery/img08_fullsize.jpg" alt=""/>
-    <img class="square_img" src="/images/gallery/img10_fullsize.jpg" alt=""/>
-    <img style="transform: rotate(90deg);" src="images/glass_case.JPG"/>
+    <div class="bvimg" style="background-image: url('/images/gallery/img25_fullsize.jpg')"></div>
+    <div class="bvimg" style="background-image: url('/images/gallery/img08_fullsize.jpg')"></div>
+    <div class="bvimg" style="background-size: 110%; background-position: -90px; background-image: url('/images/woman_with_glass.jpg')"></div>
+    <div class="bvimg" style="background-image: url('/images/glass_case_02.jpg')"></div>
     <img src="/images/A-design_4.jpg" alt=""/>
     <img src="/images/wine_room_02.jpg" alt=""/>
     <img src="/images/gallery/img01_fullsize.jpg" alt=""/>
-    <img src="/images/gallery/img03_fullsize.jpg" alt=""/>
-    <img src="/images/dining_hall.jpg" alt=""/>
+    <img src="/images/gallery/img03_02_fullsize.jpg" alt=""/>
+    <img src="/images/dining_hall_4.png" alt=""/>
     <img src="/images/gallery/img22_fullsize.jpg" alt=""/>
 </div>
 <script>
@@ -16,9 +16,9 @@
         infinite: true,
         speed: 500,
         fade: true,
-        cssEase: 'linear',
-        autoplay: true,
-        autoplaySpeed: 5000
+        cssEase: 'linear'
+//        autoplay: true,
+//        autoplaySpeed: 5000
     });
     $('#carousel img').parent().css({ "max-height": "630px"})
 </script>

@@ -50,3 +50,9 @@ a.private_dining.home {
     overflow: hidden;
 
 }
+
+#carousel div.bvimg {
+    height: 630px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
