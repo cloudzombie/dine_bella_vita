@@ -69,6 +69,12 @@ a.private_dining.home {
     bottom: 45%;
 }
 
+.restaurant.happy_hour {
+    top: 20%;
+    right: 3.5%;
+    bottom: inherit;
+}
+
 .happy_hour p {
     text-align: center;
     margin: 0;

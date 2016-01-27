@@ -17,6 +17,9 @@ dineBellaVitaApp.controller('HomeMainController', ['$scope', function($scope){
 
 dineBellaVitaApp.controller('RestaurantController', ['$scope', function($scope){
     console.log("Restaurant Controller Loaded");
+    $scope.happy_hour = {};
+    $scope.happy_hour.class = "restaurant";
+    $scope.showme = true;
 
 }]);
 

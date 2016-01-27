@@ -8,8 +8,4 @@ dineBellaVitaApp.controller('HomeController', ['$scope', function($scope){
         templateUrl: 'client/ng-templates/directives/carousel.ng.html'
     }
 })
-.directive('happyHour', function(){
-    return {
-        templateUrl: 'client/ng-templates/directives/happyhour.ng.html'
-    }
-});
+;
