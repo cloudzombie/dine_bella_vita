@@ -1,5 +1,7 @@
 dineBellaVitaApp.controller('HomeController', ['$scope', function($scope){
     $scope.showme = true;
+    $scope.socialpop = {};
+    $scope.socialpop.showme = true;
 
     console.log("Home Controller Loaded");
 }])

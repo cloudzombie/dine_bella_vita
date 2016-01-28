@@ -59,14 +59,14 @@ a.private_dining.home {
 
 .happy_hour {
     background: rgba(255,255,255,.75);
-    width: 200px;
+    width: 250px;
     border-radius: 3px;
     box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
     padding: 1em;
 
     position: absolute;
     right: 2.5%;
-    bottom: 45%;
+    bottom: 55%;
 }
 
 .restaurant.happy_hour {
@@ -87,4 +87,25 @@ a.private_dining.home {
     right: 5%;
     position: absolute;
     font-size: larger;
+}
+
+.social_popup {
+    padding: 1%;
+    position: absolute;
+    bottom: 45%;
+    right: 2.5%;
+    width: 253px;
+    z-index: 9999;
+    background-color: rgba(255,255,255,.75);
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.social_popup .close {
+    cursor: pointer;
+    top: 5%;
+    right: 5%;
+    position: absolute;
+    font-size: larger;
+    z-index: 9999;
 }
