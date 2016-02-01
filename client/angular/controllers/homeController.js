@@ -3,6 +3,8 @@ dineBellaVitaApp.controller('HomeController', ['$scope', function($scope){
     $scope.socialpop = {};
     $scope.socialpop.showme = true;
 
+    $scope.isMobile = true;
+
     console.log("Home Controller Loaded");
 }])
 .directive('myCarousel', function(){

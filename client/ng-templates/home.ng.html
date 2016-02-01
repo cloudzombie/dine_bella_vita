@@ -1,13 +1,13 @@
 <div class="page">
-    <div class="pageLogo">
+    <div ng-hide="isMobile" class="pageLogo">
 
         <a class="logo one" href="#/"></a>
         <a class="logo two" href="contact"></a>
     </div>
 
-    <div my-carousel></div>
-    <div happy-hour></div>
-    <social-popup></social-popup>
+    <div ng-hide="isMobile" my-carousel></div>
+    <div ng-hide="isMobile" happy-hour></div>
+    <social-popup ng-hide="isMobile"></social-popup>
 
 
     <div class="pageThree">
@@ -16,7 +16,7 @@
     </div>
 
 
-    <nav id="navcontainer">
+    <nav ng-hide="isMobile" id="navcontainer">
         <ul id="navlist">
             <li id="active"><a href="/#/restaurant" id="current">restaurant</a></li>
             <li><a href="#/dinner">menu</a></li>
@@ -40,7 +40,7 @@
         <p>Ristorante Bella Vita is an Authentic Italian Restaurant, located in Los Altos, offering lunch and dinner selections, banquet space, and cozy enclosed patio with bubbling water fountains.
         Our dishes are prepared only with the finest and freshest ingredients and our wine cellar is filled with both foreign and domestic vintages. Choose one by the glass or uncork a bottle in celebration. Ristorante Bella Vita opened its doors in Spring 2003 and has since been satisfying the cravings of its customers. Come in and enjoy the taste of the authentic italian food or browse our web site and be sure to visit the virtual tours of our Bar, Dining Room, Sala Bella Vita, and the Wine Celler!</p>
     </article> -->
-    <div class="promo_container page1">
+    <div ng-hide="isMobile" class="promo_container page1">
 
         <div class="promo one">
             <div class="content">
@@ -70,7 +70,7 @@
     <div class="clear-fix"></div>
 
 
-    <footer id="footerForMain">
+    <footer ng-hide="isMobile" id="footerForMain">
         &copy; ristorante bella vita <br />376 first street los altos, ca 94022 - reservations: 650.917.0300<br />
         dine@dinebellavita.com
         <div>
@@ -79,5 +79,12 @@
 
 
     </footer>
+    <div ng-show="isMobile" class="mobile-view">
+        <div>
+            Dine Bella Vita
+        </div>
+
+
+    </div>
 </div>
 
