@@ -8,5 +8,10 @@ dineBellaVitaApp = angular.module('dinebellavita', ['angular-meteor', 'ui.router
     return {
         templateUrl: 'client/ng-templates/directives/socialpopup.ng.html'
     }
+})
+.directive('mobileSlider', function(){
+    return {
+        templateUrl: 'client/ng-templates/directives/mobile.ng.html'
+    }
 });
 
