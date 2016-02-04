@@ -1,26 +1,83 @@
 <style>
+    .mobile-view .title {
+        color: #575c7a;
+        background-color: rgba(255, 255, 255, 0.74902);
+        height: 1.5em;
+        z-index: 9999;
+        text-align: center;
+        width: 100vw;
 
+    }
+    .swiper-container {
+        margin-top: -4.5em;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .mobile-logo {
+        background-image: url('/images/A-design_08.png');
+        background-repeat: no-repeat;
+        z-index: 9999;
+        height: 157px;
+        width: 167px;
+        position: absolute;
+        bottom: 10px;
+        left: 50vw;
+        /*width: 100px;*/
+
+    }
 </style>
 
 <div ng-show="isMobile" class="mobile-view">
-    <div class="title">
+<!--    <div class="title">
         Dine Bella Vita
-    </div>
-    <div class="mSlide">
-        <div class="block"></div>
-        <div class="block red"></div>
-        <div class="block"></div>
-        <div class="block red"></div>
-        <div class="block"></div>
-        <div class="block red">
-            Test
+    </div>-->
+    <div class="mobile-logo"></div>
+
+    <!-- Slider main container -->
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <div class="mobile-image" style="background-image: url('images/mobile/mob01_women_with_glass.png')"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="mobile-image" style="background-image: url('images/mobile/mob02_dining_hall.png')"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="mobile-image" style="background-image: url('images/mobile/mob03_glass.png')"></div>
+            </div>
         </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
     </div>
 
 
 </div>
 <script>
 $(function(){
+    var mySwiper = new Swiper ('.swiper-container', {
+        // Optional parameters
+        direction: 'vertical',
+        loop: true,
 
+        // If we need pagination
+        pagination: '.swiper-pagination',
+
+        // Navigation arrows
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+
+        // And if we need scrollbar
+        scrollbar: '.swiper-scrollbar',
+    })
 });
 </script>

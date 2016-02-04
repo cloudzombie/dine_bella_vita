@@ -116,7 +116,6 @@ a.private_dining.home {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: red;
 }
 
 .mobile-view .title {
@@ -147,4 +146,12 @@ a.private_dining.home {
 }
 .red {
     background-color: red;
+}
+
+.mobile-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
