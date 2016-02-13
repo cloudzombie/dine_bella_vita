@@ -109,3 +109,8 @@ a.private_dining.home {
     font-size: larger;
     z-index: 9999;
 }
+
+a.special {
+    color: red;
+    font-weight: 800;
+}
